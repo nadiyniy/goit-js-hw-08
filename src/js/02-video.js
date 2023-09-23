@@ -14,8 +14,6 @@ const restorePlayback = () => {
   if (savedTime) {
     const currentTime = JSON.parse(savedTime);
     player.setCurrentTime(currentTime);
-    console.log(currentTime);
-    console.log(savedTime);
   }
 };
 
