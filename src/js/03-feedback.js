@@ -27,6 +27,7 @@ function loadFromLS(key) {
 
 const onSubmiteFormRemove = e => {
   e.preventDefault();
+  if (Object.keys(saveData).length === 0) return;
   console.log(saveData);
   e.target.reset();
   localStorage.removeItem('SAVE_KEY');
