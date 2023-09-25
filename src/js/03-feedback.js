@@ -30,7 +30,7 @@ const onSubmiteFormRemove = e => {
   console.log(saveData);
   e.target.reset();
   localStorage.removeItem('SAVE_KEY');
-  data = {};
+  saveData = {};
 };
 
 const onInputForm = throttle(() => {
